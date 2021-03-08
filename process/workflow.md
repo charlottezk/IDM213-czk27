@@ -1,0 +1,19 @@
+- Landing page
+    - Date input
+        - enter button color change
+        - color change for input text (blink curser?)
+        - scroll event listener
+        - enter key / click button event listener
+    - Info
+        - modal (css transitions)
+        - js click/close toggel behavoir 
+    - Which sign! 
+        - js clicking background catagory
+        - js zodiac assignment + appropriate responses
+        - js sounds!
+        - js modal
+- Zodiac modal
+    - transitions (css/js)
+    - move time stamp
+    - toggel background, toggel modal (X) {Sound keep playing? stop?}
+    - set up function to be applied to appropriate sign

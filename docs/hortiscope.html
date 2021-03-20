@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>IDM231-czk27</title>
+        <meta content="hortiscope - an interactive houseplant-themed horoscope guide" name="description">
+        <link href="./hortiscope.css" rel="stylesheet" type="text/css">
+        <link rel="icon" href="..." sizes="32x32">
+    </head>
+    <body>
+        <nav>
+            <div class="container-vert">
+                <div class="container-horiz">
+                    <input type="date" class="title-1" id="nav-date-input"></input>
+                    <img id="icon-arrow" src="./graphics/icons/arrow.svg">
+                </div>
+                <div class="header-2" id="nav-caption">Enter or select your birthdate to find out what houseplant you are...</div>
+            </div>
+            <img id="icon-help" src="./graphics/icons/help.svg">
+            <div class="modal, modal-help" hidden>
+                <div class="modal-help-body">
+                    <div class="container-vert, modal-help-content">
+                        <div class="container-horiz, modal-help-header">
+                            <div class="title-2, modal-help-header-text">Help</div>
+                            <img class="icon-x, modal-help-icon-x" src="./graphics/buttons/x.svg">
+                        </div> 
+                        <div class="container-horiz, modal-help-main">
+                            <div class="container-vert"></div>
+                            <figure>
+                                <picture>
+                                    <img>
+                                </picture>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <div class="column">
+                <button class="button-column header-1" id="Ari">
+                    <div id="Ari-text">Mar 21 – Apr 19</div>
+                </button>
+            </div>
+            <div class="column right" id="Tau">
+                <button class="button-column header-1 right-jus" id="Tau-text">Apr 20 – May 20</button>
+            </div>
+            <div class="column" id="Gem">
+                <button class="button-column header-1" id="Gem-text">May 21 – Jun 20</button> 
+            </div>
+            <div class="column right" id="Can">
+                <button class="button-column header-1 right-jus" id="Can-text">Jun 21 – Jul 22</button> 
+            </div>
+            <div class="column" id="Leo">
+                <button class="button-column header-1" id="Leo-text">Jul 21 – Aug 20</button> 
+            </div>
+            <div class="column right" id="Vir">
+                <button class="button-column header-1 right-jus" id="Vir-text">Aug 21 – Sep 20</button> 
+            </div>
+            <div class="column" id="Lib">
+                <button class="button-column header-1" id="Lib-text">Sep 23 – Oct 22</button> 
+            </div>
+            <div class="column right" id="Sco">
+                <button class="button-column header-1 right-jus" id="Sco-text">Oct 23 – Nov 21</button> 
+            </div>
+            <div class="column" id="Sag">
+                <button class="button-column header-1" id="Sag-text">Nov 22 – Dec 21</button> 
+            </div>
+            <div class="column right" id="Cap">
+            <button class="button-column header-1 right-jus" id="Cap-text">Dec 22 – Jan 9</button>
+            </div>
+            <div class="column" id="Aqu">
+            <button class="button-column header-1 " id="Aqu-text">Jan 20 – Feb 18</button>
+            </div>
+            <div class="column right" id="Pis">
+            <button class="button-column header-1 right-jus" id="Pis-text">Feb 2 – Mar 20</button>
+            </div>
+        </main>
+        <div id="zodiac-modals">
+            <div class="modal, modal-zodiac" id="modal-zodiac-Ari" hidden>
+                <div class="modal-zodiac-body">
+                    <div class="container-vert, modal-zodiac-content">
+                        <div class="container-horiz, modal-zodiac-header">
+                            <div class="title-2, modal-zodiac-header-text">Help</div>
+                            <img class="icon-x, modal-zodiac-icon-x" src="./graphics/buttons/x.svg">
+                        </div> 
+                        <div class="container-horiz, modal-zodiac-main">
+                            <div class="container-vert"></div>
+                            <figure>
+                                <picture>
+                                    <img>
+                                </picture>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal, modal-zodiac" id="modal-zodiac-Tau" hidden>
+                <div class="modal-zodiac-body">
+                    <div class="container-vert, modal-zodiac-content">
+                        <div class="container-horiz, modal-zodiac-header">
+                            <div class="title-2, modal-zodiac-header-text">Help</div>
+                            <img class="icon-x, modal-zodiac-icon-x" src="./graphics/buttons/x.svg">
+                        </div> 
+                        <div class="container-horiz, modal-zodiac-main">
+                            <div class="container-vert"></div>
+                            <figure>
+                                <picture>
+                                    <img>
+                                </picture>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal, modal-zodiac" id="modal-zodiac-Gem" hidden>
+                <div class="modal-zodiac-body">
+                    <div class="container-vert, modal-zodiac-content">
+                        <div class="container-horiz, modal-zodiac-header">
+                            <div class="title-2, modal-zodiac-header-text">Help</div>
+                            <img class="icon-x, modal-zodiac-icon-x" src="./graphics/buttons/x.svg">
+                        </div> 
+                        <div class="container-horiz, modal-zodiac-main">
+                            <div class="container-vert"></div>
+                            <figure>
+                                <picture>
+                                    <img>
+                                </picture>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal, modal-zodiac" id="modal-zodiac-Can" hidden>
+                <div class="modal-zodiac-body">
+                    <div class="container-vert, modal-zodiac-content">
+                        <div class="container-horiz, modal-zodiac-header">
+                            <div class="title-2, modal-zodiac-header-text">Help</div>
+                            <img class="icon-x, modal-zodiac-icon-x" src="./graphics/buttons/x.svg">
+                        </div> 
+                        <div class="container-horiz, modal-zodiac-main">
+                            <div class="container-vert"></div>
+                            <figure>
+                                <picture>
+                                    <img>
+                                </picture>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal, modal-zodiac" id="modal-zodiac-Leo" hidden>
+                <div class="modal-zodiac-body">
+                    <div class="container-vert, modal-zodiac-content">
+                        <div class="container-horiz, modal-zodiac-header">
+                            <div class="title-2, modal-zodiac-header-text">Help</div>
+                            <img class="icon-x, modal-zodiac-icon-x" src="./graphics/buttons/x.svg">
+                        </div> 
+                        <div class="container-horiz, modal-zodiac-main">
+                            <div class="container-vert"></div>
+                            <figure>
+                                <picture>
+                                    <img>
+                                </picture>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal, modal-zodiac" id="modal-zodiac-Vir" hidden>
+                <div class="modal-zodiac-body">
+                    <div class="container-vert, modal-zodiac-content">
+                        <div class="container-horiz, modal-zodiac-header">
+                            <div class="title-2, modal-zodiac-header-text">Help</div>
+                            <img class="icon-x, modal-zodiac-icon-x" src="./graphics/buttons/x.svg">
+                        </div> 
+                        <div class="container-horiz, modal-zodiac-main">
+                            <div class="container-vert"></div>
+                            <figure>
+                                <picture>
+                                    <img>
+                                </picture>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal, modal-zodiac" id="modal-zodiac-Lib" hidden>
+                <div class="modal-zodiac-body">
+                    <div class="container-vert, modal-zodiac-content">
+                        <div class="container-horiz, modal-zodiac-header">
+                            <div class="title-2, modal-zodiac-header-text">Help</div>
+                            <img class="icon-x, modal-zodiac-icon-x" src="./graphics/buttons/x.svg">
+                        </div> 
+                        <div class="container-horiz, modal-zodiac-main">
+                            <div class="container-vert"></div>
+                            <figure>
+                                <picture>
+                                    <img>
+                                </picture>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal, modal-zodiac" id="modal-zodiac-Sco" hidden>
+                <div class="modal-zodiac-body">
+                    <div class="container-vert, modal-zodiac-content">
+                        <div class="container-horiz, modal-zodiac-header">
+                            <div class="title-2, modal-zodiac-header-text">Help</div>
+                            <img class="icon-x, modal-zodiac-icon-x" src="./graphics/buttons/x.svg">
+                        </div> 
+                        <div class="container-horiz, modal-zodiac-main">
+                            <div class="container-vert"></div>
+                            <figure>
+                                <picture>
+                                    <img>
+                                </picture>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal, modal-zodiac" id="modal-zodiac-Sag" hidden>
+                <div class="modal-zodiac-body">
+                    <div class="container-vert, modal-zodiac-content">
+                        <div class="container-horiz, modal-zodiac-header">
+                            <div class="title-2, modal-zodiac-header-text">Help</div>
+                            <img class="icon-x, modal-zodiac-icon-x" src="./graphics/buttons/x.svg">
+                        </div> 
+                        <div class="container-horiz, modal-zodiac-main">
+                            <div class="container-vert"></div>
+                            <figure>
+                                <picture>
+                                    <img>
+                                </picture>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal, modal-zodiac" id="modal-zodiac-Cap" hidden>
+                <div class="modal-zodiac-body">
+                    <div class="container-vert, modal-zodiac-content">
+                        <div class="container-horiz, modal-zodiac-header">
+                            <div class="title-2, modal-zodiac-header-text">Help</div>
+                            <img class="icon-x, modal-zodiac-icon-x" src="./graphics/buttons/x.svg">
+                        </div> 
+                        <div class="container-horiz, modal-zodiac-main">
+                            <div class="container-vert"></div>
+                            <figure>
+                                <picture>
+                                    <img>
+                                </picture>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal, modal-zodiac" id="modal-zodiac-Aqu" hidden>
+                <div class="modal-zodiac-body">
+                    <div class="container-vert, modal-zodiac-content">
+                        <div class="container-horiz, modal-zodiac-header">
+                            <div class="title-2, modal-zodiac-header-text">Help</div>
+                            <img class="icon-x, modal-zodiac-icon-x" src="./graphics/buttons/x.svg">
+                        </div> 
+                        <div class="container-horiz, modal-zodiac-main">
+                            <div class="container-vert"></div>
+                            <figure>
+                                <picture>
+                                    <img>
+                                </picture>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal, modal-zodiac" id="modal-zodiac-Pis" hidden>
+                <div class="modal-zodiac-body">
+                    <div class="container-vert, modal-zodiac-content">
+                        <div class="container-horiz, modal-zodiac-header">
+                            <div class="title-2, modal-zodiac-header-text">Help</div>
+                            <img class="icon-x, modal-zodiac-icon-x" src="./graphics/buttons/x.svg">
+                        </div> 
+                        <div class="container-horiz, modal-zodiac-main">
+                            <div class="container-vert"></div>
+                            <figure>
+                                <picture>
+                                    <img>
+                                </picture>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
